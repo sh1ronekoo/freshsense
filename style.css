@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f8fdf7;
+    color: #222;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2c7a3f;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 80px 50px;
+    gap: 50px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #2c7a3f;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    color: #444;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #2c7a3f;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hero-img img {
+    width: 450px;
+    border-radius: 12px;
+}
+
+/* FEATURES */
+.features {
+    text-align: center;
+    padding: 60px 50px;
+}
+
+.features-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.feature-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* VISUAL SECTION */
+.visual-section {
+    text-align: center;
+    padding: 60px;
+}
+
+.visual-section img {
+    width: 60%;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+/* INFORMATION SECTION */
+.info {
+    padding: 60px 50px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.info-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    padding: 60px 50px;
+    background: #2c7a3f;
+    color: white;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 15px;
+    background: white;
+    padding: 12px 25px;
+    color: #2c7a3f;
+    border-radius: 6px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #e8f5e9;
+    margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-img img {
+        width: 90%;
+    }
+}
